@@ -1,6 +1,7 @@
 module digital_clip
 
-go 1.24.1
+go 1.24.0
+
 
 require (
 	github.com/atotto/clipboard v0.1.4 // indirect
