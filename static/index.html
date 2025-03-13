@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📋--Repliqate--📋</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📋 Repliqate ⚡</h1>
+        <p class="subtitle">✨ Copy & Paste Text or Images with Ease! 🚀</p>
+
+        <textarea id="clipboardContent" placeholder="✨ Enter text or paste an image..."></textarea>
+        <div id="imagePreviewContainer">
+            <img id="imagePreview" src="#" alt="🖼️ Image Preview">
+        </div>
+
+        <div class="button-group">
+            <button onclick="copyToClipboard()">📄 Copy</button>
+            <button onclick="pasteFromClipboard()">📥 Previous</button>
+            <button onclick="clearContent()">🧹 Clear</button>
+            <button onclick="openHistoryWindow()">📜 History</button>
+        </div>
+
+        <p id="status">🚀 Ready to copy or paste!</p>
+
+        <!-- 🔥 Updated Credit Section -->
+        <div class="credit">
+            <span>Made by <strong>Swarnendu Banerjee</strong> ✨</span>
+            <div class="tech-stack">
+                Powered by 
+                <img src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Blue.png" alt="Go" width="22">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" width="22">
+            </div>
+            <a href="YOUR_GITHUB_REPO_LINK" target="_blank" title="GitHub Repo">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="22"> View on GitHub
+            </a>
+        </div>
+    </div>
+
+    <!-- History Window -->
+    <div id="historyWindow" class="history-window">
+        <div class="history-header">
+            <h2>📚 Clipboard History</h2>
+            <button onclick="closeHistoryWindow()">✕</button>
+        </div>
+        <div id="historyList" class="history-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <style>
+        .credit {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .tech-stack img {
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+
+        .credit a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #007bff;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .credit a img {
+            vertical-align: middle;
+        }
+    </style>
+</body>
+</html>
